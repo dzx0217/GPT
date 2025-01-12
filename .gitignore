@@ -1,3 +1,9 @@
 key.txt
 question.txt
 answer.md
+
+chatgpt.exe
+chatgpt.spec
+
+# 忽略 build/chatgpt 文件夹及其中的所有内容
+build/chatgpt/*

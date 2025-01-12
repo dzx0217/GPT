@@ -91,7 +91,7 @@ while True:
 
         # 将答案写入answer.md文件
         with open('answer.md', 'w', encoding='utf-8') as f:
-            f.write(f"User Input: \n{user_input}")
+            f.write(f"## User Input: \n{user_input}\n")
             f.write(answer)
 
         # 使用Typora打开answer.md文件
