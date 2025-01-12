@@ -86,11 +86,12 @@ while True:
     # 提取并输出返回的内容
     if 'choices' in response_data and len(response_data['choices']) > 0:
         message_content = response_data['choices'][0]['message']['content']
-        answer = f"# {model_name} answer:\n{message_content}"
+        answer = f"## {model_name} answer:\n{message_content}"
         type_out_text(answer)
 
         # 将答案写入answer.md文件
         with open('answer.md', 'w', encoding='utf-8') as f:
+            f.write(f"User Input: \n{user_input}")
             f.write(answer)
 
         # 使用Typora打开answer.md文件
